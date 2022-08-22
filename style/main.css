@@ -1,0 +1,157 @@
+body {
+    background-color: gray;
+}
+
+div {
+    font-size: 12px;
+}
+
+span {
+    color: rgb(105, 105, 105);
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+h3 {
+    color: rgb(105, 105, 105);
+    margin: 0;
+    padding: 0;
+}
+
+.gridcontainer {
+    
+    margin: 0 auto;
+    display: grid;
+    width: 700px;
+    background-color: rgb(241, 246, 247);
+    grid-template-columns: 520px 180px;
+    grid-template-rows: 50px 40px 200px 50px 200px 50px 150px;
+    grid-template-areas: 
+    "menu menu"
+    "title addcoin"
+    "coins coins"
+    "totalbalance totalbalance"
+    "graph expectedincome"
+    "statistic mycontracts"
+    "plan mycontracts"
+    ;
+}
+
+.menu {
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
+    grid-area: menu;
+    background-color: white;
+    border-bottom: 3px solid gray;
+    
+}
+
+.myfarm {
+    height: 25px;
+    width: 100px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: rgb(11, 11, 128);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    text-align: center;
+    height: 25px;
+    width: 100px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roundbutton {
+    height: 25px;
+    width: 140px;
+    border: 2px solid gray;
+    border-radius: 17px;
+    background-color: rgb(11, 11, 128);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: title;
+    align-items: center;
+}
+
+.titletext {
+    display: block;
+    padding-right: 20px;
+}
+
+.addcoin {
+    padding: 0 30px;
+    grid-area: addcoin;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.coins {
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: coins;
+}
+
+.coininfo {
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.totalbalance {
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: totalbalance;
+}
+
+.statistic {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: statistic;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+
+.graph {
+    padding: 0 30px;
+    grid-area: graph;
+}
+
+.expectedincome {
+    grid-area: expectedincome;
+}
+
+.plan {
+    padding: 0 30px;
+    grid-area: plan;
+}
+
+.mycontracts {
+    grid-area: mycontracts;
+}
+
